@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Special Invitation</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #080808;
+    color: #fff;
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.invitation {
+    width: 100%;
+    max-width: 520px;
+    border: 1px solid #777;
+    padding: 45px 28px;
+    text-align: center;
+    background: linear-gradient(145deg, #171717, #050505);
+    box-shadow: 0 0 35px rgba(255,255,255,0.08);
+}
+
+.small-heading {
+    font-family: Arial, sans-serif;
+    letter-spacing: 5px;
+    font-size: 11px;
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: normal;
+    margin: 25px 0 10px;
+}
+
+.subtitle {
+    color: #bbb;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 35px;
+}
+
+.divider {
+    width: 55px;
+    height: 1px;
+    background: #aaa;
+    margin: 25px auto;
+}
+
+.details {
+    margin: 25px 0;
+    line-height: 1.8;
+}
+
+.detail-label {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #999;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.detail-value {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.rsvp-heading {
+    font-size: 19px;
+    margin: 35px 0 18px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    background: transparent;
+    color: white;
+    border: 1px solid #aaa;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+#response {
+    display: none;
+    margin-top: 28px;
+    padding: 20px 10px;
+    border-top: 1px solid #777;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.footer {
+    margin-top: 35px;
+    color: #777;
+    font-size: 12px;
+    font-style: italic;
+}
+</style>
+</head>
+
+<body>
+
+<div class="invitation">
+
+    <div class="small-heading">A Personal Invitation</div>
+
+    <h1>You're Invited</h1>
+
+    <div class="subtitle">
+        An evening worth remembering.
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="details">
+
+        <div class="detail-label">The Date</div>
+        <div class="detail-value">Sunday, 6 December 2026</div>
+
+        <div class="detail-label">The Time</div>
+        <div class="detail-value">16:00 onwards</div>
+
+        <div class="detail-label">The Location</div>
+        <div class="detail-value">Unknown to you 🤫</div>
+
+        <div class="detail-label">Dress Code</div>
+        <div class="detail-value">Formal · Black & White</div>
+
+        <div class="detail-label">What to Bring</div>
+        <div class="detail-value">Your beautiful self.</div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="rsvp-heading">
+        So, what will your answer be?
+    </div>
+
+    <button onclick="accept()">YES</button>
+
+    <button onclick="accept()">YES, OF COURSE</button>
+
+    <button onclick="accept()">MAYBE... BUT YES</button>
+
+    <div id="response">
+        I had a feeling you would say yes. ❤️
+        <br>
+        It's a date!
+        <br>
+        See you on 6 December.
+    </div>
+
+    <div class="footer">
+        A little mystery. A beautiful evening. A special memory.
+    </div>
+
+</div>
+
+<script>
+function accept() {
+    document.getElementById("response").style.display = "block";
+}
+</script>
+
+</body>
+</html>
